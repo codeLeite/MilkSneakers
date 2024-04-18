@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./lib/style.css">
+<title>Milk Sneakers</title>
+</head>
+<body>
+  <header id="cabecalho">
+    <div class="navbar navbar-expand-lg">
+      <div class="container">
+        <h1>Milk Sneakers</h1>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+        <nav class="collapse navbar-collapse justify-content-end" id="menu">
+          <ul class="nav navbar-nav nav-pills">
+            <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+            <li class="nav-item"><a href="#produtos" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <section id="home" data-bs-spy="scroll" data-bs-target="#cabecalho">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel-indicadores">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel-indicadores" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+      </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+                <source media="(max-width: 767px)"
+                    srcset="./img/jordan-mobile.jpg">
+                <source media="(min-width: 768px) and (max-width: 1023px)"
+                    srcset="./img/jordan-tablet.jpg">
+                <img src="./img/jordan-desktop.jpg"
+                    class="d-block w-100" alt="...">
+            </picture>
+        </div>
+        <div class="carousel-item">
+            <picture>
+                <source media="(max-width: 767px)"
+                    srcset="./img/nike-mobile.jpg">
+                <source media="(min-width: 768px) and (max-width: 1023px)"
+                    srcset="./img/nike-tablet.jpg">
+                <img src="./img/nike-desktop.jpg" class="d-block w-100"
+                    alt="...">
+            </picture>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicadores" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-indicadores" data-bs-slide="next" class="carousel-control-next" type="button">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+  </section>
+
+  <main class="container mt-5" data-bs-spy="scroll" data-bs-target="#cabecalho">
+    <section id="produtos" >
+      <h1 class="text-center mb-4">Produtos</h1>
+      <nav class="nav nav-tabs d-flex align-items-center justify-content-between" id="nav-produtos">
+        <button data-bs-toggle="tab" data-bs-target="#jordan" class="nav-link active d-block w-25" type="button">Jordan</button>
+        <button data-bs-toggle="tab" data-bs-target="#dunk" class="nav-link d-block w-25" type="button">Dunk</button>
+        <button data-bs-toggle="tab" data-bs-target="#nikesb" class="nav-link d-block w-25" type="button">Nike SB</button>
+      </nav>
+      <div class="tab-content">
+        <div class="tab-pane active py-5" id="jordan">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.s3.amazonaws.com/111202064051631.jpeg" class="card-img-top" alt="Jordan 1 Chicago">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Jordan 1 Chicago</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1842024141137804.webp" class="card-img-top" alt="Air Jordan 3 White Cosmic Clay">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Air Jordan 3 Cosmic Clay</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1042024171419250.webp" class="card-img-top" alt="Jordan 1 Chicago">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Air Jordan 5 SE Sail</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/2622024153148818.webp" class="card-img-top" alt="Jordan 1 Chicago">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Air Jordan 4 Metallic Gold</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1842024173319750.webp" class="card-img-top" alt="Jordan 1 Chicago">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Travis Scott x Air Jordan Jumpman Jack University Red</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/114202417648641.webp" class="card-img-top" alt="Jordan 1 Chicago">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Air Jordan Nu Retro 1 Low Patent Bred</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane py-5" id="dunk">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1042024144932269.webp" class="card-img-top" alt="Nike Dunk Low LX Dark Team Red Phantom">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike Dunk Low LX Dark Team Red Phantom</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1442024205113683.webp" class="card-img-top" alt="Nike Dunk Low Knicks">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3">Nike Dunk Low Knicks</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/1142024144618606.webp" class="card-img-top" alt="Nike Dunk Low LX Black Phantom">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike Dunk Low LX Black Phantom</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/73202418241785.webp" class="card-img-top" alt="Nike Dunk Low Next Nature Cacao Wow">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike Dunk Low Next Nature Cacao Wow</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/2922024142733882.webp" class="card-img-top" alt="Nike Dunk Low Jumbo Sail Green">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike Dunk Low Jumbo Sail Green</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.s3.amazonaws.com/1122021184222854.webp" class="card-img-top" alt="Nike Dunk Low Brazil">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike Dunk Low Brazil</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane py-5" id="nikesb">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/123202417442358.webp" class="card-img-top" alt="Nike SB Dunk Low Rayssa Leal">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike SB Dunk Low Rayssa Leal</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.s3.amazonaws.com/13122020164455672.jpeg" class="card-img-top" alt="Nike SB Dunk Low Wheat Mocha">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike SB Dunk Low Wheat Mocha</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/192202415671.webp" class="card-img-top" alt="Nike SB Zoom Blazer Mid Premium Deconstructed Barcelona">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">Nike SB Zoom Blazer Mid Premium Deconstructed Barcelona</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/2911202320323614.webp" class="card-img-top" alt="The Powerpuff Girls x Nike SB Dunk Low Buttercup">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">The Powerpuff Girls x Nike SB Dunk Low Buttercup</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/29112023203345557.webp" class="card-img-top" alt="The Powerpuff Girls x Nike SB Dunk Low Bubbles">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">The Powerpuff Girls x Nike SB Dunk Low Bubbles</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 d-flex justify-content-center">
+                <div class="card d-flex align-items-center p-3">
+                  <img src="https://droper-media.us-southeast-1.linodeobjects.com/29112023203528551.webp" class="card-img-top" alt="The Powerpuff Girls x Nike SB Dunk Low Blossom">
+                  <div class="card-body">
+                    <h5 class="card-title mt-3 text-center">The Powerpuff Girls x Nike SB Dunk Low Blossom</h5>
+                    <a href="#contato" class="text-center">Encomendar</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <section data-bs-spy="scroll" data-bs-target="#cabecalho" id="sobre">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <img src="https://static.sneakerjagers.com/news/nl/2021/07/crisp-bln-shop.png"
+                    alt="">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex flex-column justify-content-center">
+                <h1 class="display-5">Conheça nossa loja</h1>
+                <p>
+                  A Milk Sneakers é mais do que uma loja de tênis. É uma expressão de estilo, inovação e conforto, inspirada pela energia das ruas e pela liberdade do movimento. Comprometida com a excelência e a sustentabilidade, cada par é cuidadosamente concebido para refletir as tendências da moda e minimizar o impacto ambiental. Junte-se a nós nessa jornada, onde cada passo é uma história a ser contada.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contato" class="my-5" data-bs-spy="scroll" data-bs-target="#cabecalho">
+  <div class="container">
+      <form id="encomendar">
+          <div class="mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <input type="email" name="email" class="form-control" id="email" value="">
+          </div>
+
+          <div class="mb-3">
+              <label for="modelo" class="form-label">Modelo</label>
+              <input type="text" name="modelo" class="form-control" id="modelo" disabled value="">
+          </div>
+          <div class="mb-3">
+              <label for="descricao" class="form-label">Descrição</label>
+              <textarea class="form-control" name="descricao" id="descricao" rows="5"></textarea>
+          </div>
+          <button class="btn w-100" type="submit">Faça seu pedido</button>
+      </form>
+  </div>
+</section>
+<footer>
+  <div class="container d-flex align-items-center justify-content-between">
+    <p>Feito por <strong>Ryan Leite</strong> 🥛</p>
+    <h3>Milk Sneakers</h3>
+  </div>
+</footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./lib/bootstrap.bundle.min.js"></script>
+  <script src="./lib/jquery.validate.min.js"></script>
+  <script>
+    $("document").ready(()=> {
+    $(".card").on("click", function(e){
+        var card = $(this).closest(".card").find("h5.card-title").text()
+        $("#modelo").val(card)
+    })
+
+    $("#encomendar").validate({
+        rules:{
+            email:{required:true},
+            descricao:{required:true}
+        },messages:{
+            email: "Insira um E-mail válido",
+            descricao: "Insira uma descrição"
+        }, submitHandler: function(){
+            alert("Pedido feito com sucesso!")
+        }
+    })
+})
+  </script>
+</body>
+</html>
